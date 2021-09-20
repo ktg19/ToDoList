@@ -1,12 +1,9 @@
 <template>
 <v-layout
     column
-    justify-start
-    align-start
+    justify-center
+    align-center
   >
-  <input v-model="test_message" placeholder="edit me">
-  <p>Message is: {{ test_message }}</p>
-
   <ToDo :local-storage-key="localStorageKey" />
 </v-layout>
 </template>
