@@ -95,5 +95,10 @@ module.exports = {
   // },
   router: {
     base: routeStr
+  },
+  watchers: {
+    webpack: {
+        poll: true
+    }
   }
 }
