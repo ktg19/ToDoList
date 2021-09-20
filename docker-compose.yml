@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: bash -c "npm install && npm run dev"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./todolist:/Application
+    tty: true
+    working_dir: /Application
+    # extra_hosts:
+    #   - "local_dev:169.254.220.49"
